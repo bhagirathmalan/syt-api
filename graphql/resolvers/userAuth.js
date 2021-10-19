@@ -34,4 +34,9 @@ module.exports = {
           throw err;
         }
       },
+      userlogin: async ({ phone, password }) => {
+        try {
+          const user = await User.findOne({ phone:  });
+
+      },
 };
